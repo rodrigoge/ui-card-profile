@@ -35,11 +35,46 @@ ul {
             }
         }
 
-        a:hover {
-            border-radius: 6px;
-            background-color: #2b2b2b;
-
-            transition: 0.6s;
+        a:nth-child(1) {
+            animation: fade 4s;
         }
+
+        a:nth-child(2) {
+            animation: fade 5s;
+        }
+
+        a:nth-child(3) {
+            animation: fade 6s;
+        }
+
+        a:nth-child(4) {
+            animation: fade 7s;
+        }
+
+        a:nth-child(5) {
+            animation: fade 8s;
+        }
+
+        a:nth-child(6) {
+            animation: fade 9s;
+        }
+
+    }
+
+    li:hover {
+        border-radius: 6px;
+        background-color: #2b2b2b;
+
+        transition: 0.6s;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
