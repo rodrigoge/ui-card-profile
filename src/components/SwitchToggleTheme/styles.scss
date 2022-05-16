@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .toggle {
+        display: flex;
+        align-items: center;
+
+        label {
+            cursor: pointer;
+
+            >input {
+                display: none;
+            }
+
+            span {
+                color: #6a759b;
+            }
+
+            i {
+                display: inline-block;
+
+                width: 50px;
+                height: 20px;
+                position: relative;
+
+                border-radius: 20px;
+                vertical-align: middle;
+                transition: 0.25s 0.00s;
+
+                background: none;
+                font-style: normal !important;
+            }
+
+
+
+            >input+i:after {
+                content: "🔆";
+
+                position: absolute;
+                display: block;
+
+                top: 2px;
+                left: -2px;
+
+                font-size: 20px;
+
+                transition: 0.15s;
+            }
+
+            >input:checked+i:after {
+                content: "🌙";
+
+                position: absolute;
+                display: block;
+
+                top: 2px;
+                left: -2px;
+
+                font-size: 20px;
+
+                transition: 0.15s;
+            }
+        }
+    }
+}
