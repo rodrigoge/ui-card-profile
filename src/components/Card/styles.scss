@@ -1,13 +1,22 @@
+@import "../../themes.scss";
+
 .card {
     width: 380px;
     height: 410px;
 
-    background-color: #1a1a1a;
+    background: var(--background-color);
     border-radius: 4px;
 
     padding: 14px;
 
     animation: fade 1s;
+    transition: all 0.3s;
+}
+
+@media(max-width: 400px) {
+    .card {
+        width: 140px;
+    }
 }
 
 @keyframes fade {

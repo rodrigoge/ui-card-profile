@@ -1,5 +1,5 @@
 import './styles.scss'
-import Avatar from '../../assets/img/profile.png'
+import Avatar from '../../assets/img/profile.jpg'
 
 type CardProps = {
     children: React.ReactNode

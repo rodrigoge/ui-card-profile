@@ -1,3 +1,5 @@
+@import "../../themes.scss";
+
 header {
     width: 100%;
 
@@ -18,10 +20,18 @@ header {
     }
 
     span {
-        color: #fafafa;
+        color: var(--text-color);
         font-family: 'Manrope', sans-serif;
         font-weight: bold;
         font-size: 22px;
+    }
+}
+
+@media(max-width: 400px) {
+    header {
+        span {
+            display: none;
+        }
     }
 }
 
